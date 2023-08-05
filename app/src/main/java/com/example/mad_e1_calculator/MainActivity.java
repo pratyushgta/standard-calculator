@@ -83,7 +83,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (exp.length() == 0) {
             output.setText("");
             return "You thought this hasn't been cared for?";
-        } else {
+        } else if(exp.equals("63") || exp.equals("59")){
+            return "hmm";
+        }else {
 
             if (!CheckOperand(exp.charAt(0)))
                 return "Skill issue.";
